@@ -167,7 +167,7 @@ function Compare-ValueEquivalent ($Actual, $Expected, $Property) {
         throw [ArgumentException]"Expected must be a Value."
     }
 
-    if ($Expected.Psobject.TypeNames[0] -like '*System.DBNull' -and $null -ne $Actual -and $Actual.Psobject.TypeNames[0] -like '*System.DBNull' )
+    if ($Expected.Psobject.TypeNames[0] -like '*System.DBNull' -and $Actual -is [Object] -and $Actual.Psobject.TypeNames[0] -like '*System.DBNull' )
     {
         return
     }
