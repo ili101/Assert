@@ -4,7 +4,7 @@
 ModuleToProcess = 'Assert.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.0'
+ModuleVersion = '999.9.5'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
